@@ -1,0 +1,22 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteEngine on
+php_value session.cookie_path "/"
+php_value session.cookie_domain ".uca-srmu.000webhostapp.com"
+
+RewriteEngine on
+php_value display_errors 1
+
+RewriteEngine on
+php_flag output_buffering on
+# HTID:18207534: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18207534:
