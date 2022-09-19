@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         ?>
             <img class="mb-4" src="/img/login.png" alt="" width="100" height="140">
-            <h1 class="h3 mb-3 fw-normal">TFC Login</h1>
+            <h1 class="h3 mb-3 fw-normal">University Club Alliance</h1>
 
             <div class="form-floating">
                 <input type="text" class="form-control" name="username" maxlength="15" id="floatingInput"
